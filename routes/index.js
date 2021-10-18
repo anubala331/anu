@@ -137,7 +137,47 @@ router.get('/blog', function(req, res, next) {
     tab_contact: 'Contact Me',
     tab_about: 'About Me',
     tab_blog: 'Blog',
-    about_me_content: 'A PROGRAM TO SEE BEHAVE OF POINTER WHEN PUTTING ITS ADDRESS INTO ANOTHER POINTER',
+    ques1: 'A PROGRAM TO SEE BEHAVE OF POINTER WHEN PUTTING ITS ADDRESS INTO ANOTHER POINTER<br>',
+    ans1: '#include<stdio.h><br>\
+    int main(void)<br>\
+    {<br>\
+            int value=77,num=99;<br>\
+            int *pv=&value,*pn=&num;<br>\
+            int **ppi;<br>\
+            ppi=&pv;<br>\
+            printf("add of pv=%d\n",pv);<br>\
+            printf("**ppi=%d\n",**ppi);<br>\
+            ppi=&pn;<br>\
+            printf("add of pn=%d\n",pn);<br>\
+            printf("**ppi=%d\n",**ppi);//this ppi has address of pn ...which have address of another variable ..which has further value at that address...//<br>\
+    //      system("pause");//prints command not found at run time ...//it will not give u error while compile time<br>\
+            return 0;<br>\
+    }',
+    ques2: 'WRITE PROGRAM TO GET GRADE FOR A PERTICULAR RANGE OF MARKS',
+    ans2: '#include<stdio.h><br>\
+    int main()<br>\
+    {<br>\
+            int set,i,scores;<br>\
+            do<br>\
+            {<br>\
+                    printf("ENTER THE SCORES:\n");<br>\
+                    scanf("%d",&scores);<br>\
+                    set=scores;<br>\
+                    if(set >= 90 && set<=100)<br>\
+                            printf("GRADE A\n");<br>\
+                    else if(set>=80 && set<90)<br>\
+                            printf("GRADE B\n");<br>\
+                    else if(set>=70 && set<80)<br>\
+                            printf("GRADE C\n");<br>\
+                    else if(set>=60 && set<70)<br>\
+                            printf("GRADE D\n");<br>\
+                    else if(set>=0 && set<60)<br>\
+                            printf("GRADE E\n");<br>\
+            }while(scores==0);<br>\
+            return 0;<br>\
+    }'
+
+   
    });
 });
 module.exports = router;
