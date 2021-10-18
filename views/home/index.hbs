@@ -206,14 +206,20 @@
   <div class="pb-4 col-8">
     <div class="p-3 border border-primary">
       <form>
-        <div class="mb-3">
-          <label for="fullName" class="form-label">{{full_name}}</label>
+     
+          <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">{{full_name}}</label>
           <input type="text" class="form-control" id="fullName">
-        </div>
-
-        <div class="mb-3">
-          <label for="email" class="form-label">{{email}}</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+            <label for="email" class="form-label">{{email}}</label>
           <input type="email" class="form-control" id="email">
+            </div>
+          </div>
         </div>
 
         <div class="row">
@@ -233,7 +239,7 @@
 
         <div class="mb-3">
           <label for="message" class="form-label">{{message}}</label>
-          <textarea class="form-control" id="message"></textarea>
+          <textarea class="form-control" id="message" style="width:70%"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">{{contact_form_btn}}</button>
     </div>
