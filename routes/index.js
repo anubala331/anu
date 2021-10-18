@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
     my_role: ' Full Stack Developer',
     my_designation: 'Lead Engineer @ HCL Technologies Private Limited<br>Please have a seat, scroll down, and I\'ll get you a coffee!',
 
-    my_skills: 'My Top 4 skills',
+    my_skills: 'Skills',
     CSTL: 'C++',
     postgres: 'Postgres',
     frontend: 'Frontend',
@@ -36,7 +36,7 @@ router.get('/', function(req, res, next) {
     ducat_role: 'Embedded System Tech',
     ducat_location: 'Noida, IN',
 
-    my_projects: 'My Projects',
+    my_projects: 'Projects',
 
     trinetra: 'Trinetra',
     trinetra_details: '\o Speed up working efficiency while shooting by different models of cameras and adding new features.<br>\
