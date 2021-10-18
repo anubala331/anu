@@ -91,7 +91,8 @@ router.get('/', function(req, res, next) {
     social_instagram_url: 'https://www.instagram.com/anu.kamboj.509/',
     social_github_url: 'https://github.com/anubala331',
 
-    potfolio_link: 'https://anubala-portfolio.herokuapp.com/'
+    potfolio_link: 'https://anubala-portfolio.herokuapp.com/',
+    hire: 'Hire Me',
   });
 });
 
