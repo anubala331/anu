@@ -1,0 +1,242 @@
+{{!-- Main content --}}
+{{!-- using flex --}}
+<div id="home" class="container-fluid bg-primary min-vh-100 d-flex justify-content-center">
+  <div class="d-flex flex-row align-items-center">
+      <div class="flex-column d-flex px-3">
+        <img src="/images/profile.png" alt="Thats someone cool" style="width:300px;height:300px; border-radius: 30%;">
+          </div>
+
+      <div class="d-flex flex-column justify-content-evenly px-3">
+        <p class="fw-bold fs-3 text text-white ">{{my_heading}}
+          <br>
+          {{my_role}}
+        </p>
+        <p class="fw-bold fs-6 text-dark">{{{my_designation}}}</p>
+      </div>
+
+    {{!-- Social media buttons --}}
+    <div class="d-flex flex-column justify-content-evenly px-3">
+      <a class="btn btn-primary my-1" style="background-color: #3b5998;" target="_blank" href="{{social_fb_url}}"><i class="fa fa-facebook"></i></a>
+         <a class="btn btn-primary my-1" style="background-color: #55ACEE;"target="_blank" href="{{soical_twitter_url}}"><i class="fa fa-twitter"></i></a>
+         <a class="btn btn-primary my-1" style="background-color: #ac2bac;"target="_blank" href="{{social_instagram_url}}"><i class="fa fa-instagram"></i></a>
+         <a class="btn btn-primary my-1" style="background-color: #0082ca;"target="_blank" href="{{social_linkedin_url}}"><i class="fa fa-linkedin"></i></a>
+         <a class="btn btn-primary my-1" style="background-color: #333333;"target="_blank" href="{{social_github_url}}"><i class="fa fa-github"></i></a>
+       </div>
+  </div>
+</div>
+
+
+{{!-- My Skills --}}
+<div id="skills" class="container pt-5">
+  <p class="fw-bold fs-3 text">{{my_skills}}</p>
+  {{!-- py : padding on y axis top and bottom --}}
+  <div class="py-2">
+    <div class="p-2 border border-success">
+      <p class="fw-bold fs-5 text">{{CSTL}} </p>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-2">
+    <div class="p-2 border border-info">
+      <p class="fw-bold fs-5 text">{{postgres}}</p>
+      <div class="progress">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-2">
+    <div class="p-2 border border-warning">
+      <p class="fw-bold fs-5 text">{{frontend}}</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-2">
+    <div class="p-2 border border-danger">
+      <p class="fw-bold fs-5 text">{{mobile_app}}</p>
+      <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Work Experience --}}
+<div class="container pt-5">
+   <div class="row">
+    <div class="col">
+  <p class="fw-bold text-center fs-3 text">{{work_ex}}</p>
+  </div>
+ 
+    <div class="col">
+  <p class="fw-bold text-center fs-3 text">{{Certifications}}</p>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="/images/HCL.png" class="card-img-top" style="height: 140px;" alt="hcl_logo">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{hcl}}</h5>
+          <p class="card-text">
+            <ul>
+              <li><b>{{hcl_dates}}</b></li>
+              <li><b>{{hcl_role}}</b></li>
+              <li><b>{{hcl_location}}</b></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="/images/avissol.png" class="card-img-top" style="height: 140px;" alt="avissol">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{avissol}}</h5>
+          <p class="card-text">
+            <ul>
+              <li><b>{{avissol_dates}}</b></li>
+              <li><b>{{avissol_role}}</b></li>
+              <li><b>{{avissol_location}}</b></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="/images/emblogic.png" class="card-img-top" style="height: 140px;" alt="emblogic_logo">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{emblogic}}</h5>
+          <p class="card-text">
+            <ul>
+              <li><b>{{emblogic_dates}}</b></li>
+              <li><b>{{emblogic_role}}</b></li>
+              <li><b>{{emblogic_location}}</b></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="/images/ducat.jpg" class="card-img-top" style="height: 140px;" alt="ducat_logo">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ducat}}</h5>
+         <p class="card-text">
+            <ul>
+              <li><b>{{ducat_dates}}</b></li>
+              <li><b>{{ducat_role}}</b></li>
+              <li><b>{{ducat_location}}</b></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="projects" class="container pt-5">
+  <p class="fw-bold fs-3 text">{{my_projects}}</p>
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{trinetra}}</h5>
+            <p class="card-text">
+                   {{{trinetra_details}}}
+              </p>
+          </div>
+        </div>
+      </div>
+
+            <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ngucccloud}}</h5>
+            <p class="card-text">
+              {{{nguccclouddetails}}}
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ngucc2}}</h5>
+            <p class="card-text">
+              {{{ngucc2details}}}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ticketing}}</h5>
+            <p class="card-text">
+              {{!-- Render html using triple moustaches --}}
+              {{{ticketingdetails}}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Contact form using form control--}}
+<div id="contact-me" class="container pt-4">
+  <p class="fw-bold fs-3 text">{{tab_contact}}</p>
+  <div class="pb-4 col-8">
+    <div class="p-3 border border-primary">
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">{{full_name}}</label>
+          <input type="text" class="form-control" id="fullName">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">{{email}}</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="phone" class="form-label">{{phone}}</label>
+              <input type="phone" class="form-control" id="phone">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="company" class="form-label">{{company}}</label>
+              <input type="company" class="form-control" id="company">
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">{{message}}</label>
+          <textarea class="form-control" id="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">{{contact_form_btn}}</button>
+    </div>
+    </form>
+  </div>
+</div>

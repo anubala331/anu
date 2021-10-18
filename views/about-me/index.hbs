@@ -1,0 +1,17 @@
+{{!-- About page --}}
+<div id="about" class="container-fluid bg-primary d-flex justify-content-center">
+  <div class="d-flex flex-row w-100 justify-content-center pt-5">
+    
+    {{!-- side image --}}
+    <div class="d-flex flex-column py-4">
+      <img src="/images/laptop.jpg" alt="Thats someone cool" style="width:400px;height:550px; border-radius: 2%;">
+    </div>
+    
+    {{!-- about me text --}}
+    <div class="d-flex flex-column w-50 p-5">
+      <p class="fw-bold fs-5 text text-dark ">{{tab_about}}</p>
+      <p class="fs-6 text text-dark">
+        {{{about_me_content}}}
+    </div>
+  </div>
+</div>
